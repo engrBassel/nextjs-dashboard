@@ -131,7 +131,7 @@ export async function authenticate(
     if (error instanceof AuthError) {
       switch (error.type) {
         case 'CredentialsSignin':
-          return 'Invalid credentials.';
+          return 'Wrong username or password';
         default:
           return 'Something went wrong.';
       }
